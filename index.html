@@ -74,13 +74,15 @@
       align-items:center;
       justify-content:center;
       padding:18px;
-      color:#4c5866;
-      font-size:clamp(2rem,2.4vw,3rem);
-      font-weight:400;
-      letter-spacing:-0.04em;
-      line-height:1.1;
-      font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
-      text-align:center;
+      overflow:hidden;
+      box-shadow:0 2px 12px rgba(15,23,42,0.04);
+    }
+    .project-visual img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+      border-radius:16px;
     }
     .project-body{display:flex;flex-direction:column;gap:14px}
     .project h3{
@@ -320,7 +322,9 @@
       <p class="small">Four representative projects that show practical skills, strategy and measurable outcomes. Click each card to view the case study.</p>
       <div class="projects-grid" style="margin-top:18px">
         <article class="project" role="article" aria-labelledby="p1">
-          <div class="project-visual">Limousine Campaign</div>
+          <div class="project-visual">
+            <img src="Screenshot 2026-09-02 191736.png" alt="Airport transfer campaign social media mockup">
+          </div>
           <div class="project-body">
             <h3 id="p1">Social Media Strategy — Limousine Services</h3>
             <p><strong>Objective:</strong> Increase brand awareness and generate inquiries for airport & corporate bookings.</p>
@@ -333,7 +337,9 @@
         </article>
 
         <article class="project" role="article" aria-labelledby="p2">
-          <div class="project-visual">Meta Ads Campaign</div>
+          <div class="project-visual">
+            <img src="https://via.placeholder.com/600x300.png?text=Meta+Ads+Campaign" alt="Meta Ads campaign thumbnail">
+          </div>
           <div class="project-body">
             <h3 id="p2">Meta Ads Campaign — Lead Gen</h3>
             <p><strong>Objective:</strong> Generate qualified local leads through lead-gen ads and creative testing.</p>
@@ -346,7 +352,9 @@
         </article>
 
         <article class="project" role="article" aria-labelledby="p3">
-          <div class="project-visual">SEO Optimization</div>
+          <div class="project-visual">
+            <img src="https://via.placeholder.com/600x300.png?text=SEO+Optimization" alt="SEO optimization thumbnail">
+          </div>
           <div class="project-body">
             <h3 id="p3">SEO Optimization — Local Services</h3>
             <p><strong>Objective:</strong> Improve organic visibility and drive qualified traffic to service pages.</p>
